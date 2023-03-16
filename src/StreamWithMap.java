@@ -8,8 +8,6 @@ public class StreamWithMap {
         var collect = map.entrySet().stream().collect(Collectors.toMap(entry -> transformKey(entry.getKey()), Map.Entry::getValue));
         System.out.println(collect);
         System.out.println(collect);
-        System.out.println(collect);
-
     }
 
     private static String transformKey(String key) {
